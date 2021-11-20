@@ -20,6 +20,10 @@ header>p,footer>p{
 }
 .content{
     display: flex;
+    justify-content: space-evenly;
+}
+.arabic-roman,.roman-arabic{
+    display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
@@ -48,4 +52,12 @@ footer{
 }
 footer>p{
     line-height: 80px;
+}
+@media screen and (max-width:700px){
+    .content{
+        flex-direction: column;
+    }
+    footer{
+        position: relative;
+    }
 }
